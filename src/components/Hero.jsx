@@ -1,6 +1,8 @@
 import React from "react";
 import "./Hero.css";
 
+import Counter from "./Counter";
+
 const Hero = () => {
     return (
         <>
@@ -76,7 +78,7 @@ const Hero = () => {
                             <img
                                 src="/images/image2.jpeg"
                                 alt="Wastewater Management"
-                                className="w-full h-[360px] object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                                className="w-full h-[360px] object-cover group-hover:scale-105 transition duration-700"
                             />
                             <div className="absolute inset-0 bg-black/40"></div>
 
@@ -108,8 +110,10 @@ const Hero = () => {
                         {/* Stat 1 */}
                         <div className="text-center">
                             <h4 className="text-5xl font-bold">
-                                500<span className="text-sky-400">+</span>
+                                <Counter end={500} />
+                                <span className="text-sky-400">+</span>
                             </h4>
+
                             <p className="mt-2 text-slate-300">
                                 MLD Water Treated
                             </p>
@@ -118,8 +122,10 @@ const Hero = () => {
                         {/* Stat 2 */}
                         <div className="text-center">
                             <h4 className="text-5xl font-bold">
-                                90<span className="text-sky-400">%</span>
+                                <Counter end={90} />
+                                <span className="text-sky-400">%</span>
                             </h4>
+
                             <p className="mt-2 text-slate-300">
                                 Compliance & Efficiency Rate
                             </p>

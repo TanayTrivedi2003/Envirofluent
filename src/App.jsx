@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-// import About from "./components/home/About";
+import ClientsSection from "./components/ClientsSection";
+import About from "./components/About";
 // import Solutions from "./components/home/Solutions";
 // import Technology from "./components/home/Technology";
 // import Workflow from "./components/home/Workflow";
@@ -20,8 +21,10 @@ function App() {
       {/* Hero Slider */}
       <Hero />
 
+      <ClientsSection />
+
       {/* About Company */}
-      {/* <About /> */}
+      <About />
 
       {/* Solutions */}
       {/* <Solutions /> */}

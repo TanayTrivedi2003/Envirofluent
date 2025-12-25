@@ -1,0 +1,43 @@
+.clients-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.clients-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.client-logo {
+  flex: 0 0 auto;
+  width: 250px;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-logo img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  /* opacity: 0.85; */
+  /* filter: grayscale(100%); */
+  transition: all 0.3s ease;
+}
+
+/* .client-logo img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+} */
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
