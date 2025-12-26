@@ -9,13 +9,19 @@ export default function Navbar() {
 
                 {/* Logo */}
                 <div className="flex items-center gap-2">
-                    <div className="w-10 h-10 rounded-full bg-sky-400 flex items-center justify-center">
-                        <span className="text-[#0B1F33] font-bold text-lg">E</span>
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden">
+                        <img
+                            src="/images/logo.png"
+                            alt="EPPL Logo"
+                            className="w-7 h-7 object-contain"
+                        />
                     </div>
+
                     <span className="text-white text-xl font-bold tracking-wide">
                         EPPL
                     </span>
                 </div>
+
 
                 {/* Desktop Menu */}
                 <nav className="hidden md:flex items-center gap-10 text-sm font-medium">
