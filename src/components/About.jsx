@@ -1,163 +1,3 @@
-// import React from "react";
-// import Counter from "./Counter";
-// import useScrollReveal from "../hooks/useScrollReveal";
-// import "../styles/scroll-reveal.css";
-// import { FaLeaf, FaAward } from "react-icons/fa";
-// import { FaHandsHelping } from "react-icons/fa";
-
-// const About = () => {
-//     useScrollReveal();
-
-//     return (
-//         <section className="bg-white py-12 sm:py-16 lg:py-24 overflow-hidden">
-//             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-//                 {/* ================= MAIN GRID ================= */}
-//                 <div className="grid grid-cols-1 lg:grid-cols-[minmax(300px,38%)_minmax(300px,62%)] gap-12 lg:gap-16 items-start">
-
-//                     {/* LEFT CONTENT */}
-//                     <div className="w-full reveal">
-//                         <span className="inline-block mb-4 lg:mb-6 px-4 py-1.5 lg:px-5 lg:py-2 rounded-full border border-sky-400 text-sky-500 text-sm font-medium">
-//                             ABOUT
-//                         </span>
-
-//                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0B1F33] leading-tight">
-//                             Leading the Way to a{" "}
-//                             <span className="block sm:inline">Cleaner, Greener Tomorrow</span>
-//                         </h2>
-
-//                         <p className="mt-4 lg:mt-6 text-gray-600 text-base sm:text-lg leading-relaxed">
-//                             We design and deliver reliable water and wastewater treatment
-//                             solutions that support industries, municipalities, and communities
-//                             in achieving sustainable and compliant water management.
-//                         </p>
-//                     </div>
-
-//                     {/* RIGHT SIDE */}
-//                     <div className="w-full">
-//                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-
-//                             {/* BIG IMAGE */}
-//                             <div className="w-full reveal reveal-delay-1">
-//                                 <div className="relative h-[280px] sm:h-[350px] md:h-[400px] lg:h-[520px] rounded-3xl overflow-hidden">
-//                                     <img
-//                                         src="/images/about1.jpg"
-//                                         alt="Water Treatment Plant"
-//                                         className="w-full h-full object-cover"
-//                                         loading="lazy"
-//                                     />
-//                                 </div>
-//                             </div>
-
-//                             {/* IMAGE + STATS */}
-//                             <div className="flex flex-col gap-6 md:gap-8 w-full">
-
-//                                 {/* SMALL IMAGE */}
-//                                 <div className="rounded-2xl overflow-hidden w-full reveal reveal-delay-2">
-//                                     <img
-//                                         src="/images/about2.jpg"
-//                                         alt="Wastewater Process"
-//                                         className="w-full h-[200px] sm:h-[250px] md:h-[220px] lg:h-[260px] object-cover"
-//                                         loading="lazy"
-//                                     />
-//                                 </div>
-
-//                                 {/* STATS BOX */}
-//                                 <div className="rounded-2xl p-6 md:p-8 w-full  reveal reveal-delay-3">
-//                                     <div className="grid grid-cols-2 gap-4 md:gap-6 text-center">
-
-//                                         <div>
-//                                             <h3 className="text-3xl md:text-4xl font-medium text-[#0B1F33]">
-//                                                 <Counter end={500} />
-//                                                 <span className="text-sky-500">+</span>
-//                                             </h3>
-//                                             <p className="text-sky-500 font-medium mt-1 text-sm md:text-base">
-//                                                 People
-//                                             </p>
-//                                             <p className="text-gray-500 text-xs md:text-sm">
-//                                                 Trusted Company
-//                                             </p>
-//                                         </div>
-
-//                                         <div>
-//                                             <h3 className="text-3xl md:text-4xl font-medium text-[#0B1F33]">
-//                                                 <Counter end={50} />
-//                                                 <span className="text-sky-500">+</span>
-//                                             </h3>
-//                                             <p className="text-sky-500 font-medium mt-1 text-sm md:text-base">
-//                                                 Communities
-//                                             </p>
-//                                             <p className="text-gray-500 text-xs md:text-sm">
-//                                                 Actively Partnered
-//                                             </p>
-//                                         </div>
-
-//                                     </div>
-
-//                                     <div className="mt-8 md:mt-10 flex justify-center">
-//                                         <button className="px-6 py-2.5 md:px-8 md:py-3 rounded-full border border-[#0B1F33] text-[#0B1F33] font-medium hover:bg-[#0B1F33] hover:text-white transition-all duration-300 text-sm md:text-base">
-//                                             Learn More
-//                                         </button>
-//                                     </div>
-//                                 </div>
-
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-
-//                 {/* ================= AWARDS ================= */}
-//                 <div className="mt-16 sm:mt-20 lg:mt-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-16 text-center">
-
-//                     {/* Award 1 */}
-//                     <div className="px-4 reveal flex flex-col items-center">
-//                         <div className="mb-5 flex items-center justify-center w-20 h-20 rounded-full border border-[#0B1F33]">
-//                             <FaLeaf className="text-[#0B1F33] text-3xl" />
-//                         </div>
-//                         <h4 className="text-lg sm:text-xl font-semibold text-[#0B1F33]">
-//                             Engineering Excellence
-//                         </h4>
-//                         <p className="mt-2 text-gray-600 text-sm sm:text-base max-w-xs">
-//                             Advanced water and wastewater system expertise with proven results.
-//                         </p>
-//                     </div>
-
-//                     {/* Award 2 */}
-//                     <div className="px-4 reveal reveal-delay-1 flex flex-col items-center">
-//                         <div className="mb-5 flex items-center justify-center w-20 h-20 rounded-full border border-[#0B1F33]">
-//                             <FaAward className="text-[#0B1F33] text-3xl" />
-//                         </div>
-//                         <h4 className="text-lg sm:text-xl font-semibold text-[#0B1F33]">
-//                             Sustainable Solutions
-//                         </h4>
-//                         <p className="mt-2 text-gray-600 text-sm sm:text-base max-w-xs">
-//                             Eco-friendly, compliant and future-ready treatment infrastructure.
-//                         </p>
-//                     </div>
-
-//                     {/* Award 3 */}
-//                     <div className="px-4 reveal reveal-delay-2 flex flex-col items-center sm:col-span-2 lg:col-span-1">
-//                         <div className="mb-5 flex items-center justify-center w-20 h-20 rounded-full border border-[#0B1F33]">
-//                             <FaHandsHelping className="text-[#0B1F33] text-3xl" />
-//                         </div>
-//                         <h4 className="text-lg sm:text-xl font-semibold text-[#0B1F33]">
-//                             Community Impact
-//                         </h4>
-//                         <p className="mt-2 text-gray-600 text-sm sm:text-base max-w-xs">
-//                             Supporting municipalities and industries across regions.
-//                         </p>
-//                     </div>
-
-//                 </div>
-//             </div>
-//         </section>
-//     );
-// };
-
-// export default About;
-
-
-
 import React, { useRef } from "react";
 import Counter from "./Counter";
 import useScrollReveal from "../hooks/useScrollReveal";
@@ -211,22 +51,14 @@ const About = () => {
                             transition={{ duration: 0.6, delay: 0.2 }}
                             className="mt-6 lg:mt-8 text-gray-600 text-base sm:text-lg leading-relaxed"
                         >
-                            We design and deliver reliable water and wastewater treatment
-                            solutions that support industries, municipalities, and communities
-                            in achieving sustainable and compliant water management.
+                            We are a water and wastewater treatment solutions company delivering reliable,
+                            efficient, and sustainable systems for industries, municipalities, and
+                            infrastructure projects. With a strong focus on compliance, performance,
+                            and long-term value, we design and implement solutions that protect
+                            natural resources and support communities.
                         </motion.p>
 
-                        {/* Quick stats for mobile/desktop */}
-                        <div className="mt-8 grid grid-cols-2 gap-4 lg:hidden">
-                            <div className="bg-gradient-to-br from-sky-50 to-white p-4 rounded-xl border border-sky-100">
-                                <h3 className="text-2xl font-bold text-[#0B1F33]">500+</h3>
-                                <p className="text-sm text-sky-600 mt-1">Projects Completed</p>
-                            </div>
-                            <div className="bg-gradient-to-br from-blue-50 to-white p-4 rounded-xl border border-blue-100">
-                                <h3 className="text-2xl font-bold text-[#0B1F33]">50+</h3>
-                                <p className="text-sm text-sky-600 mt-1">Years Experience</p>
-                            </div>
-                        </div>
+
                     </div>
 
                     {/* RIGHT SIDE */}
@@ -283,7 +115,7 @@ const About = () => {
                                     <div className="grid grid-cols-2 gap-6 md:gap-8 text-center">
                                         <div className="transform group-hover:scale-105 transition-transform duration-300">
                                             <h3 className="text-4xl md:text-5xl font-bold text-[#0B1F33]">
-                                                <Counter end={500} />
+                                                <Counter end={115} />
                                                 <span className="text-sky-500">+</span>
                                             </h3>
                                             <p className="text-sky-500 font-semibold mt-2 text-sm md:text-base tracking-wide">
@@ -296,7 +128,7 @@ const About = () => {
 
                                         <div className="transform group-hover:scale-105 transition-transform duration-300">
                                             <h3 className="text-4xl md:text-5xl font-bold text-[#0B1F33]">
-                                                <Counter end={50} />
+                                                <Counter end={28} />
                                                 <span className="text-sky-500">+</span>
                                             </h3>
                                             <p className="text-sky-500 font-semibold mt-2 text-sm md:text-base tracking-wide">
@@ -308,12 +140,12 @@ const About = () => {
                                         </div>
                                     </div>
 
-                                    <div className="mt-10 md:mt-12 flex justify-center">
+                                    {/* <div className="mt-10 md:mt-12 flex justify-center">
                                         <button className="group/btn px-8 py-3.5 rounded-full border-2 border-[#0B1F33] text-[#0B1F33] font-semibold hover:bg-[#0B1F33] hover:text-white transition-all duration-400 text-base md:text-lg flex items-center gap-2 hover:shadow-lg hover:-translate-y-1">
                                             Learn More
                                             <FaArrowRight className="transform group-hover/btn:translate-x-1 transition-transform duration-300" />
                                         </button>
-                                    </div>
+                                    </div> */}
                                 </motion.div>
                             </div>
                         </div>
@@ -365,6 +197,86 @@ const About = () => {
                     ))}
                 </div>
 
+
+
+                {/* ================= OUR SOLUTIONS ================= */}
+                <div className="mt-20 sm:mt-24 lg:mt-28">
+
+                    {/* Heading */}
+                    <div className="max-w-3xl mb-14">
+                        <span className="inline-block mb-4 px-5 py-2 rounded-full border border-sky-400 text-sky-500 text-sm font-medium bg-sky-50">
+                            OUR SOLUTIONS
+                        </span>
+
+                        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0B1F33] leading-tight">
+                            Water & Wastewater Solutions
+                            <span className="block text-sky-500">
+                                Designed for Real-World Challenges
+                            </span>
+                        </h3>
+
+                        <p className="mt-5 text-gray-600 text-base sm:text-lg leading-relaxed">
+                            We deliver proven water and wastewater treatment solutions that address
+                            industrial, municipal, and infrastructure challenges with a focus on
+                            performance, compliance, and sustainability.
+                        </p>
+                    </div>
+
+                    {/* Solution Cards */}
+                    <motion.div
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true }}
+                        transition={{ staggerChildren: 0.15 }}
+                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+                    >
+
+                        {[
+                            {
+                                title: "Industrial Water Treatment",
+                                desc: "Efficient water treatment solutions engineered for industrial processes, ensuring compliance and reduced operational costs."
+                            },
+                            {
+                                title: "Wastewater Treatment & Reuse",
+                                desc: "Advanced wastewater treatment systems enabling safe discharge and reuse while minimizing environmental impact."
+                            },
+                            {
+                                title: "Zero Liquid Discharge (ZLD)",
+                                desc: "Comprehensive ZLD solutions designed to recover water, eliminate liquid waste, and meet strict regulatory requirements."
+                            },
+                            {
+                                title: "Sewage Treatment Plants (STP)",
+                                desc: "Reliable and scalable STP solutions for municipalities, residential townships, and infrastructure projects."
+                            }
+                        ].map((item, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6, delay: index * 0.1 }}
+                                className="group relative bg-white rounded-2xl p-8 border border-gray-400 shadow-xl
+                           hover:border-sky-400 hover:-translate-y-2
+                           hover:shadow-xl transition-all duration-500"
+                            >
+                                {/* hover glow */}
+                                <div className="absolute inset-0 rounded-2xl bg-sky-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                                <h4 className="relative z-10 text-xl font-semibold text-[#0B1F33] mb-3">
+                                    {item.title}
+                                </h4>
+
+                                <p className="relative z-10 text-gray-600 text-sm leading-relaxed">
+                                    {item.desc}
+                                </p>
+
+                                <div className="mt-6 h-1 w-10 bg-sky-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            </motion.div>
+                        ))}
+
+                    </motion.div>
+                </div>
+
+
                 {/* Trust Badges */}
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -377,11 +289,7 @@ const About = () => {
                             <div className="text-3xl font-bold text-[#0B1F33]">24/7</div>
                             <div className="text-sm text-gray-500 mt-1">Support</div>
                         </div>
-                        <div className="h-12 w-px bg-gray-300"></div>
-                        <div className="text-center">
-                            <div className="text-3xl font-bold text-[#0B1F33]">ISO</div>
-                            <div className="text-sm text-gray-500 mt-1">Certified</div>
-                        </div>
+
                         <div className="h-12 w-px bg-gray-300"></div>
                         <div className="text-center">
                             <div className="text-3xl font-bold text-[#0B1F33]">99%</div>

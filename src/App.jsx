@@ -3,6 +3,10 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ClientsSection from "./components/ClientsSection";
 import About from "./components/About";
+import WhyChooseUs from "./components/WhyChooseUs";
+import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
+import DirectorMessage from "./components/DirectorMessage";
 // import Solutions from "./components/home/Solutions";
 // import Technology from "./components/home/Technology";
 // import Workflow from "./components/home/Workflow";
@@ -25,6 +29,16 @@ function App() {
 
       {/* About Company */}
       <About />
+
+      <Services />
+      {/* WhyChooseUs */}
+      <WhyChooseUs />
+
+      {/* Testimonials */}
+      <Testimonials />
+
+      {/* DirectorMessage */}
+      <DirectorMessage />
 
       {/* Solutions */}
       {/* <Solutions /> */}
@@ -49,7 +63,7 @@ function App() {
 
       {/* Footer */}
       {/* <Footer /> */}
-    </div>
+    </div >
   );
 }
 

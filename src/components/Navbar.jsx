@@ -13,7 +13,7 @@ export default function Navbar() {
                         <img
                             src="/images/logo.png"
                             alt="EPPL Logo"
-                            className="w-7 h-7 object-contain"
+                            className="w-10 h-10 object-contain"
                         />
                     </div>
 
