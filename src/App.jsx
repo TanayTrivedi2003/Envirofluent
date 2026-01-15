@@ -49,26 +49,7 @@ function App() {
       <Faq />
 
 
-      {/* Solutions */}
-      {/* <Solutions /> */}
-
-      {/* Technology */}
-      {/* <Technology /> */}
-
-      {/* Water & Wastewater Workflow */}
-      {/* <Workflow /> */}
-
-      {/* Projects */}
-      {/* <Projects /> */}
-
-      {/* Clients & Certifications */}
-      {/* <Clients /> */}
-
-      {/* Testimonials */}
-      {/* <Testimonials /> */}
-
-      {/* Contact */}
-      {/* <Contact /> */}
+     
 
       {/* Footer */}
       <Footer />
