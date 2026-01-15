@@ -12,7 +12,7 @@ const About = () => {
     const isInView = useInView(ref, { once: true, amount: 0.3 });
 
     return (
-        <section className="bg-white py-12 sm:py-16 lg:py-24 overflow-hidden relative">
+        <section id="about" className="bg-white py-12 sm:py-16 lg:py-24 overflow-hidden relative">
             {/* Background decorative elements */}
             <div className="absolute -top-20 -right-20 w-64 h-64 bg-sky-50 rounded-full opacity-50 blur-3xl"></div>
             <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-blue-50 rounded-full opacity-30 blur-3xl"></div>

@@ -7,6 +7,9 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import DirectorMessage from "./components/DirectorMessage";
+import Faq from "./components/FAQ";
+import InquiryForm from "./components/InqueryForm";
+import Footer from "./components/Footer";
 // import Solutions from "./components/home/Solutions";
 // import Technology from "./components/home/Technology";
 // import Workflow from "./components/home/Workflow";
@@ -35,10 +38,16 @@ function App() {
       <WhyChooseUs />
 
       {/* Testimonials */}
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       {/* DirectorMessage */}
       <DirectorMessage />
+
+      <InquiryForm />
+
+      {/* FAQ*/}
+      <Faq />
+
 
       {/* Solutions */}
       {/* <Solutions /> */}
@@ -62,7 +71,7 @@ function App() {
       {/* <Contact /> */}
 
       {/* Footer */}
-      {/* <Footer /> */}
+      <Footer />
     </div >
   );
 }

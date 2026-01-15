@@ -47,7 +47,7 @@ const item = {
 
 const Services = () => {
     return (
-        <section className="bg-white py-24 px-6">
+        <section id="services" className="bg-white py-24 px-6">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-16">
 
                 {/* LEFT CONTENT */}

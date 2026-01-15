@@ -1,7 +1,16 @@
 import { useState } from "react";
 import React from "react";
+
 export default function Navbar() {
     const [open, setOpen] = useState(false);
+
+    const menuItems = [
+        { label: "Home", link: "#home" },
+        { label: "About", link: "#about" },
+
+        { label: "Our Services", link: "#services" },
+        { label: "FAQ", link: "#FAQ" },
+    ];
 
     return (
         <header className="fixed top-0 left-0 w-full z-50 bg-[#0B1F33]">
@@ -22,16 +31,15 @@ export default function Navbar() {
                     </span>
                 </div>
 
-
                 {/* Desktop Menu */}
-                <nav className="hidden md:flex items-center gap-10 text-sm font-medium">
-                    {["Home", "About", "Services", "Pages", "Contact"].map((item) => (
+                <nav className="hidden md:flex items-center gap-10 text-md font-medium">
+                    {menuItems.map((item) => (
                         <a
-                            key={item}
-                            href={`#${item.toLowerCase()}`}
+                            key={item.label}
+                            href={item.link}
                             className="text-slate-300 hover:text-sky-400 transition"
                         >
-                            {item}
+                            {item.label}
                         </a>
                     ))}
                 </nav>
@@ -42,13 +50,13 @@ export default function Navbar() {
                         href="#contact"
                         className="bg-sky-400 text-[#0B1F33] px-7 py-3 rounded-full font-medium hover:bg-sky-300 transition"
                     >
-                        Get Started
+                        Contact
                     </a>
                 </div>
 
                 {/* Mobile Toggle */}
                 <button
-                    className="md:hidden text-white text-xl"
+                    className="md:hidden text-white text-2xl"
                     onClick={() => setOpen(!open)}
                 >
                     ☰
@@ -59,19 +67,21 @@ export default function Navbar() {
             {open && (
                 <div className="md:hidden bg-[#0B1F33] border-t border-white/10">
                     <nav className="flex flex-col px-6 py-6 gap-5 text-slate-300 text-sm">
-                        {["Home", "About", "Services", "Pages", "Contact"].map((item) => (
+                        {menuItems.map((item) => (
                             <a
-                                key={item}
-                                href={`#${item.toLowerCase()}`}
+                                key={item.label}
+                                href={item.link}
                                 className="hover:text-sky-400 transition"
                                 onClick={() => setOpen(false)}
                             >
-                                {item}
+                                {item.label}
                             </a>
                         ))}
+
                         <a
                             href="#contact"
                             className="mt-2 bg-sky-400 text-[#0B1F33] px-6 py-3 rounded-full text-center font-medium"
+                            onClick={() => setOpen(false)}
                         >
                             Get Started
                         </a>

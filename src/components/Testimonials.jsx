@@ -50,7 +50,7 @@ const Testimonials = () => {
                 </div>
 
                 {/* Main testimonial */}
-                <div className="bg-gray-50 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-10 mb-16">
+                <div className="bg-gray-100 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-10 mb-16">
 
                     {/* Image */}
                     <div className="md:w-1/3">
@@ -89,7 +89,7 @@ const Testimonials = () => {
                     {smallTestimonials.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-gray-50 rounded-2xl p-8 relative"
+                            className="bg-gray-100 rounded-2xl p-8 relative"
                         >
                             <div className="text-4xl text-gray-300 mb-4">“</div>
 

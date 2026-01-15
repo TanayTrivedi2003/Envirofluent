@@ -45,12 +45,15 @@ const DirectorMessage = () => {
                     <div className="relative bg-gray-50 rounded-3xl p-6 shadow-lg">
 
                         {/* Image */}
-                        <div className="relative rounded-2xl overflow-hidden">
-                            <img
-                                src="/images/director.jpg" // replace with real image
-                                alt="Director"
-                                className="w-full h-[420px] object-cover"
-                            />
+                        <div className="relative rounded-2xl overflow">
+                            <div className=" flex  justify-center">
+                                <img
+                                    src="/images/director_envirofluent.png"
+                                    alt="Director"
+                                    className="max-h-full max-w-full object-contain rounded-2xl"
+                                />
+                            </div>
+
 
                             {/* Quote Overlay */}
                             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-6">
@@ -65,7 +68,7 @@ const DirectorMessage = () => {
                         {/* Name & Role */}
                         <div className="mt-6">
                             <h4 className="text-xl font-semibold text-[#0B1F33]">
-                                Director Name
+                                Shyam Yadav
                             </h4>
 
                             <p className="text-sm text-gray-500 mt-1">
