@@ -80,25 +80,30 @@ const Footer = () => {
                                 href="mailto:info@envirofluent.com"
                                 className="hover:text-sky-400 transition"
                             >
-                                info@envirofluent.com
+                                envirofluentproject464@gmail.com
+
                             </a>
                         </li>
 
-                        <li>
+                        <li className="flex flex-row gap-2">
                             📞{" "}
                             <a
                                 href="tel:+919999999999"
                                 className="hover:text-sky-400 transition"
                             >
-                                +91 99999 99999
+                                +91 8400787384
+                            </a>
+                            <a
+                                href="tel:+919999999999"
+                                className="hover:text-sky-400 transition"
+                            >
+                                +91 9969103022
                             </a>
                         </li>
 
                         <li className="leading-relaxed">
-                            📍 Corporate Office: <br />
-                            Envirofluent Projects Pvt. Ltd., <br />
-                            Industrial Area, <br />
-                            India
+                            📍Office: <br />
+                            202, IInd Floor, Shree Sadan Building, Datiwali Road,Diva(E) Thane, Maharastra-400612, India
                         </li>
                     </ul>
                 </div>

@@ -17,7 +17,11 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
 
                 {/* Logo */}
-                <div className="flex items-center gap-2">
+                <a
+                    href="#home"
+                    className="flex items-center gap-2 cursor-pointer"
+                    onClick={() => setOpen(false)}
+                >
                     <div className="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden">
                         <img
                             src="/images/logo.png"
@@ -29,7 +33,9 @@ export default function Navbar() {
                     <span className="text-white text-xl font-bold tracking-wide">
                         EPPL
                     </span>
-                </div>
+                </a>
+
+
 
                 {/* Desktop Menu */}
                 <nav className="hidden md:flex items-center gap-10 text-md font-medium">

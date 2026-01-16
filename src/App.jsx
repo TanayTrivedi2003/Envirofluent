@@ -10,6 +10,9 @@ import DirectorMessage from "./components/DirectorMessage";
 import Faq from "./components/Faq";
 import InquiryForm from "./components/InqueryForm";
 import Footer from "./components/Footer";
+import ProjectGallery from "./components/ProjectGAallery";
+import WhatsAppButton from "./components/WhatsAppButton";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -29,8 +32,7 @@ function App() {
       {/* WhyChooseUs */}
       <WhyChooseUs />
 
-      {/* Testimonials */}
-      {/* <Testimonials /> */}
+      <ProjectGallery />
 
       {/* DirectorMessage */}
       <DirectorMessage />
@@ -45,6 +47,12 @@ function App() {
 
       {/* Footer */}
       <Footer />
+
+
+      {/* Floating utilities */}
+      <WhatsAppButton />
+
+      <ScrollToTop />
     </div >
   );
 }
