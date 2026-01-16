@@ -13,7 +13,7 @@ const WhatsAppButton = () => {
             <img
                 src="/images/whatsapp.png"
                 alt="whatsapp"
-                className="w-10 h-10"
+                className="w-14 h-14"
             />
 
 
